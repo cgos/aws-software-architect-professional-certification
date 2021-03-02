@@ -1,0 +1,5 @@
+zone "aws.animals4life.org" { 
+  type forward; 
+  forward only;
+  forwarders { 10.16.35.246; 10.16.106.155; }; 
+};

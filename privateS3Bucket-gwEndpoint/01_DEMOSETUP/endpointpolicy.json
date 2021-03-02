@@ -1,0 +1,32 @@
+{
+    "Version":"2012-10-17",
+    "Statement":[
+    {
+        "Effect":"Allow",
+        "Principal": "*",
+        "Action": "s3:*",
+        "Resource":[ 
+        "arn:aws:s3:::demo3-privatecats-1aekl5lc1gu60/*",
+        "arn:aws:s3:::demo3-publiccats-16qayf9qs3omd/*"
+        ]
+    },
+    {
+        "Effect" : "Allow",
+        "Principal" : "*",
+        "Action" : "s3:ListBucket",
+        "Resource" : [
+        "arn:aws:s3:::demo3-privatecats-1aekl5lc1gu60",
+        "arn:aws:s3:::demo3-publiccats-16qayf9qs3omd"
+        ]
+    },
+    {
+        "Effect" : "Allow",
+        "Principal": "*",
+        "Action":[
+        "s3:ListAllMyBuckets",
+        "s3:GetBucketLocation"
+        ],
+        "Resource" : "*"
+    }
+    ]
+}

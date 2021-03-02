@@ -1,0 +1,1 @@
+instructions are here: https://github.com/acantril/learn-cantrill-io-labs/tree/master/aws-hybrid-activedirectory
